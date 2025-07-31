@@ -84,7 +84,6 @@
 .right-item{
     margin-left: auto;
     display: flex;
-    flex-direction: column;
     align-items: end;
 }
 .item-paragraph-right{
