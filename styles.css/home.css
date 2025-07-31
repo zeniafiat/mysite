@@ -1,0 +1,141 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 8rem;
+    gap: 6rem;
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items:center;
+    max-height: 18.75rem;
+    height: 100%;
+    position: relative;
+    @media (max-width:720px) {
+        position:static;
+        max-height: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.preview-profile{
+    display: flex;
+    gap: 2rem;
+    @media (max-width:720px) {
+        flex-direction: column;
+    }
+}
+.preview-arrow{
+    position: absolute;
+    left: 10%;
+    top: 0;
+    opacity: 40%;
+    @media (max-width:720px) {
+        display: none;
+    }
+}
+.preview-icon{
+    position: relative;
+    @media (max-width:720px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.preview-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.preview-info_paragraph{
+    font-size: 1.18rem;
+    letter-spacing: 2%;
+    font-weight: 140;
+}
+.preview-info-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.paragraph-group{
+    font-size: 1.3125rem;
+    display: flex;
+    align-items: center;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4.375rem;
+    
+}
+.home-content-title_img{
+    margin: 0 5px;
+}
+.home-content-information{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.won_img{
+    border-radius: 0.75rem;
+    opacity: 40%;
+}
+.diplomas{
+    border: 0.2rem var(--border) solid;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+
+.glowing-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    
+    /* Основное свечение */
+    box-shadow: 
+        0 0 20px 10px rgba(255, 255, 255, 0.8),
+        0 0 60px 30px rgba(255, 255, 255, 0.6),
+        0 0 120px 60px rgba(255, 255, 255, 0.3);
+    
+    /* Анимация мерцания */
+    animation: glow-pulse 3s infinite ease-in-out;
+    
+    /* Дополнительные эффекты */
+    filter: brightness(1.1);
+    will-change: box-shadow, filter;
+}
+
+/* Анимация пульсации свечения */
+@keyframes glow-pulse {
+    0% {
+        box-shadow: 
+            0 0 20px 10px rgba(255, 255, 255, 0.8),
+            0 0 60px 30px rgba(255, 255, 255, 0.6),
+            0 0 120px 60px rgba(255, 255, 255, 0.3);
+        filter: brightness(1);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px 15px rgba(255, 255, 255, 0.9),
+            0 0 90px 45px rgba(255, 255, 255, 0.7),
+            0 0 180px 90px rgba(255, 255, 255, 0.4);
+        filter: brightness(1.2);
+    }
+    100% {
+        box-shadow: 
+            0 0 20px 10px rgba(255, 255, 255, 0.8),
+            0 0 60px 30px rgba(255, 255, 255, 0.6),
+            0 0 120px 60px rgba(255, 255, 255, 0.3);
+        filter: brightness(1);
+    }
+}

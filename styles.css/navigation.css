@@ -1,0 +1,33 @@
+.navigation{
+    max-width: 123.75rem;
+    width: 100%;
+    z-index: 997;
+    background-color: var(--background-navigation-color);
+    padding: 2.6875rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    transition: 
+        opacity 2s ease-out 1s,
+        transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+    @media (max-width:800px) {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+.scrolled{
+    position: fixed;
+    max-width: 33rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    transform: translateY(-1rem);
+    transition: 
+    opacity 1s ease-out 1s,
+    transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+    @media (max-width:1000px) {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
