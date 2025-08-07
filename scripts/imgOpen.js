@@ -39,7 +39,7 @@ document.addEventListener("click", function(e) {
             transform: translate(-50%, -50%);
             opacity: 1;
             cursor: zoom-out;
-            border-radius: 0;
+            border-radius: 0.75rem;
             transition: all 0.3s ease;
         `;
     } else {

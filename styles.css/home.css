@@ -4,6 +4,9 @@
     align-items: start;
     padding-top: 8rem;
     gap: 6rem;
+    @media  (max-width:480px){
+        padding-top: 2rem;
+    }
 }
 .preview{
     display: flex;
